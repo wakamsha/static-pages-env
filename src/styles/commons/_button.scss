@@ -1,0 +1,11 @@
+.button {
+    display: block;
+    background: $theme-primary;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.button-wrapper {
+    @include clearfix;
+}

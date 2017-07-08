@@ -1,0 +1,30 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="description", content=metaDescription)
+    meta(name="keywords", content=metaKeywords)
+    title hello webpack
+    link(rel="stylesheet" type="text/css" href="/main.css")
+    //- base(href='/', target='_self')
+
+  body
+    .container
+        h1 hello world!!!!!
+        button.button click me
+
+        include components/_my-component.pug
+
+        ul.nav.nav-tabs(role="tablist")
+            li.active(role="presentation"): a(href="#home" aria-controls="home" role="tab" data-toggle="tab") HOME
+            li: a(href="#profile" aria-controls="profile" role="tab" data-toggle="tab") PROFILE
+        .tab-content
+            .tab-pane.active#home
+                p home
+            .tab-pane#profile
+                p profile
+
+
+    script(src="/bundle.js")
