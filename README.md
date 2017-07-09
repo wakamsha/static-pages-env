@@ -1,4 +1,4 @@
-# static_pages_env
+# static-pages-env
 Static web page development environment
 
 
